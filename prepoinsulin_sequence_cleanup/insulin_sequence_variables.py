@@ -17,3 +17,7 @@ cInsulin = preproInsulin[89:110]
 
 insulin = (bInsulin + aInsulin)
 
+print(f'Exibição de sequências\n')
+
+print(f'Sequência de pré-proinsulina humana: {preproInsulin}')
+print(f'Sequência de insulina: {insulin}')
