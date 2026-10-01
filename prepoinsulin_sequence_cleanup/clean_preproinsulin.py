@@ -1,7 +1,9 @@
 import re
+from pathlib import Path
 
 def clean_sequence(file_path):
-    with open(file_path, 'r') as file:
+    sequence_path = Path(__file__).resolve().parent / file_path
+    with open(sequence_path, 'r') as file:
         code = file.read()
 
     sequence = re.sub(r'[^a-z]', '', code)
