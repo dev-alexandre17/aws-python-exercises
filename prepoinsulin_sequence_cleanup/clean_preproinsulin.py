@@ -5,11 +5,10 @@ def clean_sequence(file_path):
         code = file.read()
 
     sequence = re.sub(r'[^a-z]', '', code)
-    print(f'Recuperação da sequência proteica da pré-proinsulina humana\n')
-    print(f'Dados formatados: {sequence}')
-    print(f'Quantidade de caracters: {len(sequence)}')
+    return sequence
 
-clean_sequence('preproinsulin-seq.txt')
+if __name__ == "__main__":
+    clean_sequence('preproinsulin-seq.txt')
 
 
 
